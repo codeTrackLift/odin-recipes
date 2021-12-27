@@ -1,6 +1,12 @@
 * {
     background-color: khaki;
 }
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
 h1 {
     color: white;
     background-color: black;
@@ -46,6 +52,9 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 }
+.roundimg {
+    border-radius: 50%;
+}
 .zoom {
     transition: transform .2s;
     width: 50%;
@@ -53,5 +62,5 @@ footer {
     margin: 0 auto;
 }
 .zoom:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
