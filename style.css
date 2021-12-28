@@ -1,7 +1,43 @@
 html {
     box-sizing: border-box;
     background-color: khaki;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
+div {
+    border-color: red;
+    border-style: dotted;
+}
+h1 {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+h2 {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+}
+p {
+    color: rgb(0, 255, 34);
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+ol {
+    width: 70%;
+}
+footer {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*container styles*/
 .container {
     display: grid;
     grid-template-areas: "head body"
@@ -11,8 +47,6 @@ html {
     margin: 50px;
     grid-gap: 10px;
     padding: 10px;
-    border-color: red;
-    border-style: dotted;
 }
 .head {
     grid-row: 1;
@@ -26,61 +60,26 @@ html {
 }
 .list {    
     justify-content: center;
-    background-color: lime;
+    background-color: rgb(0, 255, 170);
     align-items: center;
-    min-height: 12em;
+    display: grid;
 }
 .foot {
     grid-row: 2;
     grid-column: foot;
-    background-color: lightslategray;
+    background-color: gray;
     justify-items: center;
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
-/**, *:before, *:after{
-    box-sizing: inherit;
-}*/
-h1 {
-    color: white;
-    background-color: black;
-    text-align: center;
-}
 
-h2 {
-    color: blue;
-    background-color: yellow;
-    text-align: center;
-}
-
-p {
-    background-color:gray;
-    color: rgb(0, 255, 34);
-    text-align: center;
-}
+/*image styles*/
 .center {
     display: flex;
     width: 70%;
 }
-ul {
-    width: 70%;
-    margin-left: -2rem;
-    margin-right: auto;
-    list-style-type: none;
-}
-ol {
-    width: 70%;
-}
-/*footer {
-    display: flex;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: row;
-    justify-content: space-around;
-}*/
-.roundimg {
+    .roundimg {
     border-radius: 50%;
 }
 .zoom {
