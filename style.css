@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     background-color: khaki;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vw;
 } 
 div {
     border-color: red;
@@ -11,11 +12,13 @@ h1 {
     color: white;
     background-color: black;
     text-align: center;
+    font-size: 3vw;
 }
 h2 {
     color: blue;
     background-color: yellow;
     text-align: center;
+    font-size: 2vw;
 }
 p {
     color: rgb(0, 255, 34);
@@ -43,10 +46,9 @@ footer {
     grid-template-areas: "head body"
                          "foot foot";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 14fr 1fr;
     margin: 50px;
     grid-gap: 10px;
-    padding: 10px;
 }
 .head {
     grid-row: 1;
@@ -57,12 +59,16 @@ footer {
     grid-row: 1 / span 2;
     grid-column: 2;
     background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
 }
 .list {    
     justify-content: center;
     background-color: rgb(0, 255, 170);
     align-items: center;
     display: grid;
+}
+.directions {
 }
 .foot {
     grid-row: 2;
