@@ -59,6 +59,7 @@ footer {
     grid-column: 1;*/
     background-color: aqua;
     flex: 1;
+    margin: auto;
 }
 .body {
     /*grid-row: 1 / span 2;
